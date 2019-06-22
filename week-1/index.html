@@ -8,15 +8,27 @@
 
   <script type="text/javascript">
     // data (variables)
+    var project = { 
+        name:"Javascript-1", 
+        link:"https://github.com/ebruispir/javascript-1-homework",
+        description:"My javascript homework on Github"
+    }
 
     // functions
+    function print_deets(project) {
+          console.log(project.name);
+          console.log(project.link);
+          console.log(project.description);
+    }
 
   </script>
 </head>
 
 <body>
-  <h1>week 1 index.html</a>
-  <!-- delete this button when you're ready to start! -->
-  <a href="./example-to-study.html">example to study</a>
+  <h1>Welcome to the home page!</h><br><br>
+  <button onclick="print_deets(project)">Project Details</button> <br>
+  <button onclick="print_deets(project)">Project Details</button> <br>
+  <a href="./team.html"></a> 
+  <a href="./calc.html"></a>
 </body>
 </html>
