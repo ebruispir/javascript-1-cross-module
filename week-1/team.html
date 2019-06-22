@@ -8,13 +8,28 @@
 
   <script type="text/javascript">
     // data (variables)
+    var teamName ="Javascript";
+    var teamMembers =[ "Ebru", "Erdem","Esra" ];
 
     // functions
-
+   function print_team_name(teamName){
+        console.log("Welcome to the " + teamName + " project.");
+   }
+   function print_team_members(teamMembers){
+        console.log("My team members are as follows:\n" + teamMembers);
+   }
+   function introduce(teamName,teamMembers){
+         print_team_name(teamName);
+         print_team_members(teamMembers);
+   }
   </script>
 </head>
 
 <body>
-
+<h1>Welcome to the my team page</h1>
+<button onclick="print_team_name(teamName)" >Name</button><br><br>
+<button onclick="print_team_members(teamMembers)">Members</button><br><br>
+<button onclick="introduce(teamName,teamMembers)">Introduction</button>
+<a href="./index.html"></a>
 </body>
 </html>
