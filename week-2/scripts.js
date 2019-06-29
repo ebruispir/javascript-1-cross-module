@@ -11,3 +11,10 @@
         console.log(key +" : "+ project[key]);
     }
 } 
+
+// onclick
+
+var details = document.getElementById("print");
+details.onclick = function (){
+    print_deets(project);
+}
